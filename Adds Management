@@ -1,0 +1,25 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    // Variables for user input
+    int adsViewed;
+    double adRevenuePerView, totalRevenue;
+
+    // Input details
+    cout << "Enter the number of ads viewed: ";
+    cin >> adsViewed;
+
+    cout << "Enter the revenue per ad view (in dollars): ";
+    cin >> adRevenuePerView;
+
+    // Calculate total revenue
+    totalRevenue = adsViewed * adRevenuePerView;
+
+    // Display the result
+    cout << fixed << setprecision(2); // Format output to 2 decimal places
+    cout << "Total advertising revenue: $" << totalRevenue << endl;
+
+    return 0;
+}
